@@ -23,7 +23,7 @@ This directory contains templates and scripts for quickly setting up Python proj
    ```bash
    # Interactive mode
    new-python-project
-   
+
    # Direct mode - NEW projects
    new-python-project my-api web
    pysetup data-analysis data
@@ -34,7 +34,7 @@ This directory contains templates and scripts for quickly setting up Python proj
    # From within existing project directory
    cd my-existing-project
    pysetup
-   
+
    # Or specify project directory
    pysetup my-existing-project
    ```## 📋 Project Types
