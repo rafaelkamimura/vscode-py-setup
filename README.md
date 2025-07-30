@@ -1,5 +1,12 @@
 # VSCode Python Project Templates
 
+![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+![VSCode](https://img.shields.io/badge/VSCode-templates-blue.svg)
+![Rye](https://img.shields.io/badge/rye-supported-green.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+
+🐍 Complete VSCode Python development templates with automated project setup. Supports rye/ruff/uv toolchain, Vim keybindings, 9 debug configurations, and dual-mode operation for new & existing projects.
+
 This directory contains templates and scripts for quickly setting up Python projects with your preferred VSCode configuration.
 
 ## 📁 Files Overview
