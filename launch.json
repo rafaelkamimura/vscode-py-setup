@@ -1,0 +1,161 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env",
+            "python": "${command:python.interpreterPath}",
+            "justMyCode": false,
+            "stopOnEntry": false,
+            "showReturnValue": true
+        },
+        {
+            "name": "Python: Current File (with arguments)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env",
+            "python": "${command:python.interpreterPath}",
+            "args": [],
+            "justMyCode": false,
+            "stopOnEntry": false,
+            "showReturnValue": true
+        },
+        {
+            "name": "Python: pytest - Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "args": [
+                "${file}",
+                "-v",
+                "-s"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env",
+            "python": "${command:python.interpreterPath}",
+            "justMyCode": false,
+            "stopOnEntry": false,
+            "showReturnValue": true
+        },
+        {
+            "name": "Python: pytest - All Tests",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "args": [
+                "-v",
+                "-s"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env",
+            "python": "${command:python.interpreterPath}",
+            "justMyCode": false,
+            "stopOnEntry": false,
+            "showReturnValue": true
+        },
+        {
+            "name": "Python: Module",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "enter-your-module-name",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env",
+            "python": "${command:python.interpreterPath}",
+            "justMyCode": false,
+            "stopOnEntry": false,
+            "showReturnValue": true
+        },
+        {
+            "name": "Python: Django",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "runserver",
+                "127.0.0.1:8000"
+            ],
+            "django": true,
+            "autoReload": {
+                "enable": true
+            },
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env",
+            "python": "${command:python.interpreterPath}",
+            "justMyCode": false,
+            "stopOnEntry": false,
+            "showReturnValue": true
+        },
+        {
+            "name": "Python: Flask",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/app.py",
+            "env": {
+                "FLASK_APP": "app.py",
+                "FLASK_DEBUG": "1"
+            },
+            "args": [
+                "run",
+                "--host=127.0.0.1",
+                "--port=5000"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env",
+            "python": "${command:python.interpreterPath}",
+            "justMyCode": false,
+            "stopOnEntry": false,
+            "showReturnValue": true
+        },
+        {
+            "name": "Python: FastAPI",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "main:app",
+                "--reload",
+                "--host",
+                "127.0.0.1",
+                "--port",
+                "8000"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env",
+            "python": "${command:python.interpreterPath}",
+            "justMyCode": false,
+            "stopOnEntry": false,
+            "showReturnValue": true
+        },
+        {
+            "name": "Python: Attach to Remote",
+            "type": "debugpy",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 5678
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}",
+                    "remoteRoot": "."
+                }
+            ],
+            "justMyCode": false,
+            "showReturnValue": true
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "charliermarsh.ruff",
+        "ms-python.python",
+        "ms-python.debugpy",
+        "detachhead.basedpyright",
+        "njpwerner.autodocstring",
+        "kevinrose.vsc-python-indent",
+        "littlefoxteam.vscode-python-test-adapter"
+    ]
+}
